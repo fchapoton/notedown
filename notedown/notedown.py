@@ -9,7 +9,6 @@ import tempfile
 
 from six.moves import map
 from six.moves import range
-from six.moves import zip
 
 import nbformat.v4.nbbase as nbbase
 import nbformat.v4 as v4
