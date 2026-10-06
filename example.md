@@ -152,7 +152,7 @@ code_blocks = [dict(d.items() + [('type', code)]) for d in
                                                             code_blocks]
 
 # remove indents, add code magic, etc.
-map(pre_process_code_block, code_blocks)
+list(map(pre_process_code_block, code_blocks))
 
 text_blocks = [{'content': text[i:j], 'type': markdown} for i, j
                                                    in text_limits]
