@@ -143,7 +143,7 @@ def pre_process_code_block(block):
 # based on the code block edges
 text_starts = [0] + [m.end() for m in code_matches]
 text_stops = [m.start() for m in code_matches] + [len(text)]
-text_limits = zip(text_starts, text_stops)
+text_limits = list(zip(text_starts, text_stops))
 
 # list of the groups from the code blocks
 code_blocks = [m.groupdict() for m in code_matches]
