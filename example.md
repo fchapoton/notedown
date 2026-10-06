@@ -158,7 +158,7 @@ text_blocks = [{'content': text[i:j], 'type': markdown} for i, j
                                                    in text_limits]
 
 # create a list of the right length
-all_blocks = range(len(text_blocks) + len(code_blocks))
+all_blocks = list(range(len(text_blocks) + len(code_blocks)))
 
 # cells must alternate in order
 all_blocks[::2] = text_blocks
