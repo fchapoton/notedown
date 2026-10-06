@@ -7,8 +7,6 @@ import re
 import subprocess
 import tempfile
 
-from six.moves import map
-
 import nbformat.v4.nbbase as nbbase
 import nbformat.v4 as v4
 
